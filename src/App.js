@@ -2,15 +2,18 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
+  Flex,
+  Spacer,
   VStack,
-  Code,
+  IconButton,
   Grid,
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import {FaGithub} from 'react-icons/fa';
+import Header from "./Components/Header";
+import Profile from "./Components/Profile";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
@@ -18,20 +21,15 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
+          <VStack spacing={8} p={5}>
+            <Flex w="100%">
+              <Spacer></Spacer>
+              <a href="https://github.com/Tero75" target='_blank' rel="noreferrer"><IconButton ml={8} icon={<FaGithub /> }  isRound="true"></IconButton></a>
+             
+            </Flex>
+            <Header />
+            <Profile />
+            <Projects />
           </VStack>
         </Grid>
       </Box>
