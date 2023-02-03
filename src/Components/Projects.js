@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Stack, Flex,Box,Text, Button } from '@chakra-ui/react';
+import { Stack, Flex,Box, Button } from '@chakra-ui/react';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import HangmanGame from './Works/HangmanGame';
 import NumberGuessingGame from './Works/NumberGuessingGame';
@@ -9,19 +9,9 @@ import PuulaakiLiigaManager from './Works/PuulaakiLiigaManager'
 const Projects = () => {
     const [isNotSmallerScreen] = useMediaQuery("min-width:600px");
     const [showHide, setShowHide] = useState(false);
-
-    const ButtonClick = ()=> {
-
-        if(showHide===true) {
-            setShowHide(false)
-            ShowElement()
-        }else {
-            setShowHide(true)
-        }
-    }
-    const ShowElement = (element)=> {
-        return (showHide === true)? element : "";
-    }
+    
+    const ButtonClick = ()=> { (showHide===true)? setShowHide(false): setShowHide(true);}
+    const ShowElement = (element)=> { return (showHide === true)? element : ""; }
 
     return (
         <Stack>
