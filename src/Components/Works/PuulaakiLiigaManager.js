@@ -7,8 +7,8 @@ const PuulaakiLiigaManager = () => {
 
     return (
         <Stack>
-             <Box>
-                <Text fontSize="1xl" fontWeight="normal">Is C# console app to manage teams coaches, players...</Text>  
+             <Box h= "auto" bg='lightblue' border='2px' borderColor='white.200' borderRadius='5px' p='5px'>
+                <Text fontSize="xl" fontWeight="normal">Console app to manage teams coaches, players...</Text>  
                 <a href="https://github.com/Tero75/PuulaakiLiiga" target='_blank' rel="noreferrer"><IconButton icon={<FaGithub /> } isRound="true"></IconButton></a>
             </Box>  
         </Stack>

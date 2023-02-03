@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Stack, Flex,Box, Button } from '@chakra-ui/react';
+import { Stack, Flex, Box, Heading, Button, Center } from '@chakra-ui/react';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import HangmanGame from './Works/HangmanGame';
 import NumberGuessingGame from './Works/NumberGuessingGame';
@@ -18,7 +18,9 @@ const Projects = () => {
             <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="200px" p={isNotSmallerScreen ? "32" : "0"} alignSelf="flex-start">
                 <Box mt={isNotSmallerScreen ? "0" : 16} align='flex-sart'>
                     <Stack direction='column' spacing={4}>
-                        <Button  onClick={ButtonClick}>My works Show/Hide</Button>
+                        <Center>
+                        <Heading as='h2' size='xl'>My works <Button  onClick={ButtonClick}>{(showHide===true)?"Hide":"Show"}</Button></Heading>
+                        </Center>
                         <Stack>
                             {ShowElement(<HangmanGame />)}
                             {ShowElement(<NumberGuessingGame />)}

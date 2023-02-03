@@ -6,8 +6,8 @@ const NumberGuessingGame = () => {
     
     return (
         <Stack>            
-            <Box>
-                <Text fontSize="1xl" fontWeight="normal">Is react and bootstrap app...</Text>
+            <Box h= "auto" bg='lightblue' border='2px' borderColor='white.200' borderRadius='5px' p='5px'>
+                <Text fontSize="xl" fontWeight="normal">Is react and bootstrap app...</Text>
                 <a href="https://github.com/Tero75/NumberGuessingGame" target='_blank' rel="noreferrer"><IconButton icon={<FaGithub /> } isRound="true"></IconButton></a>
             </Box>
         </Stack>
