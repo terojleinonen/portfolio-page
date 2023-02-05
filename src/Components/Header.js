@@ -16,8 +16,8 @@ const Header = () => {
                     <Text color={isDark ? "gray.200" : "gray.500"}>Computer engineer and programmer</Text>
                 </Box>
                 <Center>
-                    <Circle size='305px' bg={isDark ? "gray.200" : "gray.500"} >
-                        <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"} mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full' backgroudcolor="transparent" boxShadow="lg" boxSize="300px" src="img/selfie.jpg"/>
+                    <Circle size='305px' bg={isDark ? "gray.200" : "gray.500"} mt={isNotSmallerScreen ? "0" : "12"} mb={isNotSmallerScreen ? "0" : "12"} >
+                        <Image alignSelf="center" borderRadius='full' backgroudcolor="transparent" boxSize="300px" src="img/selfie.jpg"/>
                     </Circle>
                 </Center>
             </Flex>

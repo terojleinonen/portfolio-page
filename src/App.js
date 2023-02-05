@@ -19,7 +19,7 @@ function App() {
           <VStack p={5}>
             <Flex w="100%">
               <Spacer></Spacer>
-              <ColorModeSwitcher justifySelf="flex-end" />
+              <ColorModeSwitcher />
               <a href="https://github.com/Tero75" target='_blank' rel="noreferrer"><IconButton ml={8} icon={<FaGithub /> }  isRound="true"></IconButton></a>
              
             </Flex>
