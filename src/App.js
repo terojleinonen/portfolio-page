@@ -6,6 +6,7 @@ import {
   IconButton,
   theme,
   Spacer,
+  Tooltip,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import {FaGithub} from 'react-icons/fa';
@@ -20,8 +21,7 @@ function App() {
             <Flex w="100%">
               <Spacer></Spacer>
               <ColorModeSwitcher />
-              <a href="https://github.com/Tero75" target='_blank' rel="noreferrer"><IconButton ml={8} icon={<FaGithub /> }  isRound="true"></IconButton></a>
-             
+              <Tooltip label='Visit my Github page'><a href="https://github.com/Tero75" target='_blank' rel="noreferrer"><IconButton ml={8} icon={<FaGithub /> }  isRound="true"></IconButton></a></Tooltip>             
             </Flex>
             <Header />
             <Profile />
