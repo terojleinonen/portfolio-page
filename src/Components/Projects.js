@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Stack, Flex, Box, Heading, Button, Center, Tooltip } from '@chakra-ui/react';
+import { Stack, Flex, Box, Heading, Center, Tooltip, IconButton } from '@chakra-ui/react';
 import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons'
 import { useMediaQuery } from '@chakra-ui/media-query';
 import HangmanGame from './Works/HangmanGame';
@@ -20,7 +20,7 @@ const Projects = () => {
                 <Box mt={isNotSmallerScreen ? "0" : 16} align='flex-sart'>
                     <Stack direction='column' spacing={4}>
                         <Center><Heading as='h2' size='xl'>My works </Heading></Center>
-                        <Center><Button  onClick={ButtonClick} bgColor='transparent' w='auto' h='auto'>{(showHide===true)? <Tooltip label='Hide Myworks'><TriangleUpIcon boxSize={8}/></Tooltip>:<Tooltip label='Show Myworks'><TriangleDownIcon boxSize={8} /></Tooltip>}</Button></Center>
+                        <Center><IconButton  onClick={ButtonClick} bgColor='transparent'>{(showHide===true)? <Tooltip label='Hide Myworks'><TriangleUpIcon boxSize={8}/></Tooltip>:<Tooltip label='Show Myworks'><TriangleDownIcon boxSize={8} /></Tooltip>}</IconButton></Center>
                         <Stack>
                             {ShowElement(<HangmanGame />)}
                             {ShowElement(<NumberGuessingGame />)}
