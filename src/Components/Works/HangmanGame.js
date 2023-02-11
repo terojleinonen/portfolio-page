@@ -13,7 +13,7 @@ const HangmanGame = () => {
         <Stack>
             <Box bg={isDark ? "whiteAlpha.200" : "gray.100"} borderRadius='5px' p='10px'>
                 <Heading as='h2' size='xs'>HangmanGame</Heading>
-                <Text fontSize="xl" fontWeight="normal" p='15px'><ArrowRightIcon boxSize={4}/>Webapp that gives you randomly chosen word to gues. You win if you don't get your self hanged</Text>
+                <Text fontSize={{ base: '14px', md: '20px', lg: '24px' }} fontWeight="normal" p='15px'><ArrowRightIcon boxSize={4}/>Webapp that gives you randomly chosen word to gues. You win if you don't get your self hanged</Text>
                 <Flex minWidth='max-content' alignItems='center' gap='2'>
                     <Box bg={isDark ? "whiteAlpha.200" : "gray.200"} borderRadius='5px' p={2}><Text>JavaScript</Text></Box>
                     <Box bg={isDark ? "whiteAlpha.200" : "gray.200"} borderRadius='5px' p={2}><Text>React</Text></Box>

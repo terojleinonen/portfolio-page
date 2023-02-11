@@ -10,7 +10,7 @@ const Header = () => {
         <Stack>
             <Flex direction='column'alignSelf="flex-start">
                 <Box align='center'>
-                    <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.500)" bgClip="text">Tero Leinonen</Text>
+                    <Text fontSize={{ base: '48px', md: '80px', lg: '120px' }} fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.500)" bgClip="text">Tero Leinonen</Text>
                     <Text color={isDark ? "gray.200" : "gray.500"}>Computer engineer and programmer</Text>
                 </Box>
                 <Center>
