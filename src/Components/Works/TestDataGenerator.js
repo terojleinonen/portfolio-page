@@ -1,5 +1,5 @@
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Stack,Box,Text, Heading,Flex,Tooltip, Circle} from '@chakra-ui/react';
+import { Stack,Box,Text, Heading,Flex,Tooltip, Circle, Link} from '@chakra-ui/react';
 import { IconButton } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
 import {FaGithub} from 'react-icons/fa';
@@ -16,7 +16,7 @@ const TestDataGenerator = () => {
                 <Flex minWidth='max-content' alignItems='center' gap='2'>
                     <Circle bg={isDark ? "whiteAlpha.200" : "gray.200"} p={2}><Text>C#</Text></Circle>
                     <Box bg={isDark ? "whiteAlpha.200" : "gray.200"} borderRadius='5px' p={2}><Text>C# Library</Text></Box>
-                    <Tooltip label='Sources'><a href="https://github.com/Tero75/TestDataGenerator" target='_blank' rel="noreferrer"><IconButton icon={<FaGithub /> } isRound="true"></IconButton></a></Tooltip>
+                    <Tooltip label='Sources'><Link href="https://github.com/Tero75/TestDataGenerator" isExternal><IconButton icon={<FaGithub /> } isRound="true" bg={isDark ? "whiteAlpha.200" : "gray.200"}></IconButton></Link></Tooltip>
                 </Flex>
             </Box>
         </Stack>

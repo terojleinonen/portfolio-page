@@ -5,6 +5,7 @@ import {
   Flex,
   VStack,
   theme,
+  Link
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import {FaGithub} from 'react-icons/fa';
@@ -18,7 +19,7 @@ function App() {
           <VStack p={5}>
             <Flex direction='column' alignSelf='flex-end'>            
               <ColorModeSwitcher />
-              <a href="https://github.com/Tero75" target='_blank' rel="noreferrer"><IconButton ml={8} icon={<FaGithub /> }  isRound="true"></IconButton></a>
+              <Link href="https://github.com/Tero75" isExternal><IconButton mt='5px' icon={<FaGithub /> } color='current' variant='ghost' isRound="true"></IconButton></Link>
             </Flex>
             <Header />
             <Profile />
