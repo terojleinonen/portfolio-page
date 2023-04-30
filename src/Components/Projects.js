@@ -12,19 +12,23 @@ const Projects = () => {
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
     
-    const ButtonClick = ()=> { (showHide===true)? setShowHide(false): setShowHide(true);}
-    const ShowElement = (element)=> { return (showHide === true)? element : ""; }
+    const ButtonClick = ()=> {showHide ? setShowHide(false): setShowHide(true);}
+    const ShowElement = (element)=> { return showHide ? element : null; }
 
     return (
         <Stack>  
             <Stack direction='column'>
                 <Center><Heading as='h2' fontSize={{ base: '12px', md: '24px', lg: '28px' }} color={isDark ? "gray.400" : "gray.500"} mt={8}>My works </Heading></Center>
-                <Center><IconButton  onClick={ButtonClick} bgColor='transparent' color={isDark ? "gray.400" : "gray.500"} >{(showHide===true)? <Tooltip label='Hide Myworks'><TriangleUpIcon boxSize={8}/></Tooltip>:<Tooltip label='Show Myworks'><TriangleDownIcon boxSize={8} /></Tooltip>}</IconButton></Center>
+                <Center><IconButton  onClick={ButtonClick} bgColor='transparent' color={isDark ? "gray.400" : "gray.500"} >{showHide ? <Tooltip label='Hide Myworks'><TriangleUpIcon boxSize={8}/></Tooltip>:<Tooltip label='Show Myworks'><TriangleDownIcon boxSize={8} /></Tooltip>}</IconButton></Center>
                 <Stack>
-                    {ShowElement(<HangmanGame />)}
-                    {ShowElement(<NumberGuessingGame />)}
-                    {ShowElement(<TestDataGenerator />)}
-                    {ShowElement(<PuulaakiLiigaManager />)}
+                    {ShowElement(
+                        <Stack>
+                            <HangmanGame />
+                            <NumberGuessingGame />
+                            <TestDataGenerator />
+                            <PuulaakiLiigaManager />
+                        </Stack>
+                    )}
                 </Stack>
             </Stack>
         </Stack>
