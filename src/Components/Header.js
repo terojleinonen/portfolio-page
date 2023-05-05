@@ -1,5 +1,12 @@
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Stack , Flex, Box, Text, Circle, Center} from '@chakra-ui/layout';
+import { 
+    Stack , 
+    Flex, 
+    Box, 
+    Text, 
+    Circle, 
+    Center
+} from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 
 const Header = () => {

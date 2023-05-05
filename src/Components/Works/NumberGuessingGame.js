@@ -1,5 +1,14 @@
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Stack,Box,Text, Heading,Flex,Tooltip, Circle, Link} from '@chakra-ui/react';
+import { 
+    Stack,
+    Box,
+    Text,
+    Heading,
+    Flex,
+    Tooltip, 
+    Circle, 
+    Link
+} from '@chakra-ui/react';
 import { IconButton } from '@chakra-ui/react';
 import {FaGithub} from 'react-icons/fa';
 

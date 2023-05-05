@@ -1,4 +1,9 @@
-import { Stack, Flex,Box,Text } from '@chakra-ui/react';
+import { 
+    Stack, 
+    Flex,
+    Box,
+    Text 
+} from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/color-mode'
 
 const Profile = () => {
